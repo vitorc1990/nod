@@ -10,4 +10,7 @@ do {
 fibonacci.length = sequency;
 console.log(fibonacci.join(" "));
 
+
+
+
 document.write("A sequência Fibonacci é: " + fibonacci.join(" "));
