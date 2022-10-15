@@ -16,8 +16,15 @@
 
         }
 
-            let numbers = [1,5,2,99,81,100,144,121,91,85,74,10];
-        
-        console.log(numbers);
-        console.log(quickSort(numbers));
-        document.write(quickSort(numbers));
+        let numbers = [];
+        var tests = parseInt(prompt("Quantos números você quer ordenar?"));
+        var counter = 0;
+
+        while(counter < tests) {
+            var value = parseInt(prompt("Insira o número desejado: "));
+            numbers.push(value);
+            counter++;
+        }
+
+        document.write("A sequência original: " + numbers + "<br>");
+        document.write("A sequência ordenada: " + quickSort(numbers));
